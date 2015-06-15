@@ -13,7 +13,7 @@ It will generate tidy_dataset.txt file after analysis has been finished.
 
 You can view it using the following R script, just copy it into R console and press Enter:
 
-*address <- "https://s3.amazonaws.com/coursera-uploads/user-c3553e70505fc66f1b515eae/973502/asst-3/dc6dc900139711e58025db5948936a7d.txt"*
-*address <- sub("^https", "http", address)*
-*data <- read.table(url(address), header = TRUE)*
-*View(data)*
+>address <- "https://s3.amazonaws.com/coursera-uploads/user-c3553e70505fc66f1b515eae/973502/asst-3/dc6dc900139711e58025db5948936a7d.txt"*
+>*address <- sub("^https", "http", address)*
+>*data <- read.table(url(address), header = TRUE)*
+>*View(data)*
