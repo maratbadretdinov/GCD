@@ -7,8 +7,18 @@ It contains the following files:
  + code_book.md - code book, explaining variables of data set;
  + README.md - this file.
  
-In order to start analysis, just copy run_analysis.R into your work directory and source it.
-It will automatically download all required data from internet, unzip it and process.
+In order to start analysis, just copy run_analysis.R into your work directory and source it.  
+It will automatically download all required data from internet, unzip it and process.  
+First, it will read training and test data from the following files:  
+ + X_train.txt;
+ + X_test.txt;
+ + subject_train.txt;
+ + subject_test.txt;
+ + y_train.txt;
+ + y_test.txt;
+ + features.txt;
+ + activity_labels.txt.
+ 
 It will generate tidy_dataset.txt file after analysis has been finished.
 You can view it using the following R code, just copy it into R console and press Enter:
 
