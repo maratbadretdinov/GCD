@@ -1,5 +1,5 @@
 ---
-title: "codeBook.md"
+title: "code_book.md"
 author: "Marat Badretdinov"
 date: "Friday, June 12, 2015"
 output: html_document
