@@ -5,7 +5,7 @@ date: "Friday, June 12, 2015"
 output: html_document
 ---
 
-# TIDY DATASET CODE BOOK
+# TIDY DATA SET CODE BOOK
 
 ## Groping variables
 
