@@ -69,7 +69,7 @@ for(li in 1:length(gr_list)) {
 # create resulting dataframe from names of grouping categories 
 # and matrix with mean values for every function/category
 df <- data.frame(subjectid = str_extract(names(gr_list), "\\d+"), 
-                 activity = str_extract(names(gr_list), "[A-Z]+|[A-Z]+_[A-Z]+"), m)
+                 activity = str_extract(names(gr_list), "[A-Z]+[_]*[A-Z]+"), m)
 
 # set syntactically correct names for function columns
 nm <- make.names(meanStd[,2],unique=T)
