@@ -79,4 +79,4 @@ names(df)[-c(1:2)] <- nm
 
 # write data frame into txt file
 write.table(df, "tidy_dataset.txt", row.names=FALSE)
-View(df, "Tidy dataset")
+View(df, "Tidy data set")
