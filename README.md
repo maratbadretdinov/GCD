@@ -40,7 +40,7 @@ That dataframe will be written into tidy_dataset.txt file.
 It can be viewed without running run_analisys.R script using the following R code. Just copy it into R console and press Enter:
 
 ```{r eval=FALSE}
-address <- "https://s3.amazonaws.com/coursera-uploads/user-c3553e70505fc66f1b515eae/973502/asst-3/dc6dc900139711e58025db5948936a7d.txt"
+address <- "https://s3.amazonaws.com/coursera-uploads/user-c3553e70505fc66f1b515eae/973502/asst-3/d9011c20146111e5a7b11d395d343ce9.txt"
 address <- sub("^https", "http", address)
 data <- read.table(url(address), header = TRUE)
 View(data)
