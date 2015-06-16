@@ -9,7 +9,7 @@ output: html_document
 
 ## Groping variables
 
-**subject_id**  - Id of subjects from 1 to 30
+**subjectid**  - Id of subjects from 1 to 30
 
 **activity**  - Activity each subject was doing
 
