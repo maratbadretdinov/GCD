@@ -9,18 +9,34 @@ It contains the following files:
  
 In order to start analysis, just copy run_analysis.R into your work directory and source it.  
 It will automatically download all required data from internet, unzip it and process.  
-First, it will read training and test data from the following files:  
+
+Firstly, it will read training and test data from the following files:  
  + X_train.txt;
  + X_test.txt;
  + subject_train.txt;
  + subject_test.txt;
  + y_train.txt;
- + y_test.txt;
+ + y_test.txt;  
+ as well as dictionary files describing features and activities:  
  + features.txt;
  + activity_labels.txt.
  
-It will generate tidy_dataset.txt file after analysis has been finished.
-You can view it using the following R code, just copy it into R console and press Enter:
+Secondly, it will create joined training+test subject, training+test activity 
+and training+test measurement data sets from separate training and test data sets. 
+Activity ids will be replaced by activity labels using factor level adjustment.  
+
+Thirdly, it will extract measurements only for mean and std functions. 
+Then merge subject, activity and measurement data sets together into so called whole_set.
+
+Fourthly, it will split whole_set into a list of data frames categorized by 
+subject_id and activty. Then from that list it'll create a matrix where every column represents 
+an average value for every of 66 functions.  
+
+In the end it will create resulting dataframe from names of grouping categories 
+and calculated matrix with mean values for every function/category. 
+That dataframe will be written into tidy_dataset.txt file.  
+
+It can be viewed without running run_analisys.R script using the following R code. Just copy it into R console and press Enter:
 
 ```{r eval=FALSE}
 address <- "https://s3.amazonaws.com/coursera-uploads/user-c3553e70505fc66f1b515eae/973502/asst-3/dc6dc900139711e58025db5948936a7d.txt"
