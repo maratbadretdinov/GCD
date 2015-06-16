@@ -17,7 +17,8 @@ Firstly, it will read training and test data from the following files:
  + subject_test.txt;
  + y_train.txt;
  + y_test.txt;  
- as well as dictionary files describing features and activities:  
+ 
+as well as dictionary files describing features and activities:  
  + features.txt;
  + activity_labels.txt.
  
@@ -26,13 +27,13 @@ and training+test measurement data sets from separate training and test data set
 Activity ids will be replaced by activity labels using factor level adjustment.  
 
 Thirdly, it will extract measurements only for mean and std functions. 
-Then merge subject, activity and measurement data sets together into so called whole_set.
+Then it'll merge subject, activity and measurement data sets together into so called whole_set.
 
 Fourthly, it will split whole_set into a list of data frames categorized by 
-subject_id and activty. Then from that list it'll create a matrix where every column represents 
+subject_id and activty. Then, from that list it'll create a matrix where every column represents 
 an average value for every of 66 functions.  
 
-In the end it will create resulting dataframe from names of grouping categories 
+In the end, script will create resulting dataframe from names of grouping categories 
 and calculated matrix with mean values for every function/category. 
 That dataframe will be written into tidy_dataset.txt file.  
 
